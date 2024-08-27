@@ -45,10 +45,11 @@ def query(query_p, model, tokenizer, device):
             query_record["Answer"] =  output["Answer"]
             query_record["Explanation"] =  output["Explanation"]
         except JSONDecodeError:
+            print("\nfailed in parsing json with " + full_answer1)
             query_record["Answer"] =  ""
             query_record["Explanation"] =  ""
     except:
-        # print('Exception in query Llama3')
+        print("\nfailed in query Llama3")
         query_record = {"query": query_p, 
                         "response": "",
                         "date": today,
