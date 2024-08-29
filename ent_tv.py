@@ -13,7 +13,7 @@ from transformers import pipeline
 warnings.filterwarnings('ignore') # setting ignore as a parameter
 
 def model(name, device):
-    huggingface_hub.login(token='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')
+    huggingface_hub.login(token='') # add your user token here
     model = LlamaForCausalLM.from_pretrained(name)
     tokenizer = AutoTokenizer.from_pretrained(name, padding_side="left")
     if tokenizer.pad_token is None:
