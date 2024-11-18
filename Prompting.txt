@@ -1,0 +1,32 @@
+'VF': '''A claim is verifiable if its truth value can be derived or tested to be true or false based on specified knowledge. Is Claim1 verifiable? Claim1 is originally from the CC in an online conversation.
+      Claim1: {}
+      CC: {}
+      PPlease respond with 1 for Yes or -1 for No or 0 for unsure. Do not provide any additional information or explanation. Only respond with -1, 1, 0''',
+'TV': '''Claim1 is originally from the Claim2 in an online conversation. Is Claim1 true?
+      Claim1: {}
+      Claim2: {}
+      Please respond with 1 for yes or -1 for No or 0 for unsure. Do not provide any additional information or explanation. Only respond with -1, 1, 0''',
+'Causality': '''Does Claim1 cause Claim2? 
+    Claim1: {} 
+    Claim2: {}
+    Please respond with 1 for Yes or -1 for No or 0 for unsure.''',
+'Causality2': '''Does Claim1 cause Claim2? Claim1 and Claim2 are from the counterfactual claim CC from an online conversation.
+    Claim1: {} 
+    Claim2: {}
+    CC:{}
+    Please respond with 1 for Yes or -1 for No or 0 for unsure.''',
+'OnePrompt':'''Claim 1 is a counterfactual claim from an online conversation. Is Claim1 true? Claim1: "{}".  Please respond with 1 for yes or -1 for No or 0 for unsure. Do not provide any additional information or explanation. Only respond with -1, 1, 0''',
+'OnePrompt_Basic':'''Claim 1 is a counterfactual claim. Is Claim1 true? Claim1: "{}".  Please respond with 1 for yes or -1 for No or 0 for unsure. Do not provide any additional information or explanation. Only respond with -1, 1, 0''',
+'PP1': '''A counterfactual claim (CC) describe hypothetical scenarios and its consequent should follow its antecedent. Given the counterfactual claim: {}
+      The antecedent is: {}
+      The consequent is:{}
+      Is the counterfactual claims false? Please respond with 1 for yes or 0 for otherwise. Do not provide any additional information or explanation. Only respond with 1, 0''',
+'PP2': '''A counterfactual claim (CC) describe hypothetical scenarios. Thus, a CC is false if its antecedent is true or its consequent is true or its consequent does not follow the antecedent. Given the counterfactual claim: {}
+      The antecedent is: {}
+      The consequent is:{}
+      Is the counterfactual claims false? Please respond with 1 for yes or 0 for otherwise. Do not provide any additional information or explanation. Only respond with 1, 0''',
+'Al3': '''A counterfactual claim is false if its antecedent is true or its consequent is true or its antecedent does not cause the consequent. In addition, a counterfactual claim is true if both its antecedent and consequent are false and its antecedent causes its consequent. Otherwise, it is unkonwn.
+      Given the counterfactual claim: {}
+      Its antecedent is: {}
+      Its consequent is:{}
+      Is the counterfactual claims true? Please respond with 1 for true or -1 for false or 0 for unknown'''
